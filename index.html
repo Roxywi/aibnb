@@ -10,8 +10,97 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <div class="headertext">
+            <h1>Réserver un séjour. Accueillez des voyageurs. Directement sur Airbnb.</h1>
+            <div class="click">
+                <h2 class="explorer">Trouvez des logements et des activités <br />
+                    <a href="Explorerlink">Explorer</a>
+                </h2>
+                <h2 class="accueillir">Réserver un séjour <br />
+                    <a href="Accueillirlink">Accueillir</a>
+                </h2>
+            </div>
+        </div>
+    </header>
 
+    <researchzone>
+        <form method="post" action="traitement.php">
+            <h3>Réservez des logements et des expériences uniques</h3>
+
+            <fieldset>
+                <div class="lieu">
+                    <p>
+                        <label for="Où">Où</label><br />
+                        <input type="text" name="Où" id="Où" placeholder="Barcelone">
+                    </p>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="dates">
+                    <p>
+                        <label for="Date">Arrivée</label>
+                        <input type="date" name="Arrivée" id="Arrivée">
+                    </p>
+                    <p>
+                        <label for="Date">Départ</label>
+                        <input type="date" name="Départ" id="Départ">
+                    </p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="people">
+                    <p>
+                        <label for="Number">ADULTES</label><br />
+                        <select name="nombre_adultes" id="nombre_adultes">
+                            <option value="1 adulte">1 adulte</option>
+                            <option value="2 adultes">2 adultes</option>
+                            <option value="3 adultes">3 adultes</option>
+                            <option value="4 adultes">4 adultes</option>
+                            <option value="5 adultes">5 adultes</option>
+                            <option value="6 adultes">6 adultes</option>
+                            <option value="7 adultes">7 adultes</option>
+                            <option value="8 adultes">8 adultes</option>
+                            <option value="9 adultes">9 adultes</option>
+                            <option value="10 adultes">10 adultes</option>
+                            <option value="11 adultes">11 adultes</option>
+                            <option value="12 adultes">12 adultes</option>
+                            <option value="13 adultes">13 adultes</option>
+                            <option value="14 adultes">14 adultes</option>
+                            <option value="15 adultes">15 adultes</option>
+                            <option value="16 adultes">16 adultes</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="Number">ENFANTS</label><br />
+                        <select name="nombre_enfants" id="nombre_enfants">
+                            <option value="1 enfant">1 enfant</option>
+                            <option value="2 enfants">2 enfants</option>
+                            <option value="3 enfants">3 enfants</option>
+                            <option value="4 enfants">4 enfants</option>
+                            <option value="5 enfants">5 enfants</option>
+                            <option value="6 enfants">6 enfants</option>
+                            <option value="7 enfants">7 enfants</option>
+                            <option value="8 enfants">8 enfants</option>
+                            <option value="9 enfants">9 enfants</option>
+                            <option value="10 enfants">10 enfants</option>
+                            <option value="11 enfants">11 enfants</option>
+                            <option value="12 enfants">12 enfants</option>
+                            <option value="13 enfants">13 enfants</option>
+                            <option value="14 enfants">14 enfants</option>
+                            <option value="15 enfants">15 enfants</option>
+                            <option value="16 enfants">16 enfants</option>
+                        </select>
+                    </p>
+                </div>
+            </fieldset>
+            </div>
+
+
+        </form>
+    </researchzone>
 </body>
 
 </html>

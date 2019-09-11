@@ -3,3 +3,32 @@ body
     margin: 0;
     padding: 0;
 }
+
+header
+{
+    width: 100vw;
+    height: 20vw;
+    background-image: url("./images/phare.jpg")
+
+}
+
+.headertext
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: baseline;
+    
+}
+
+.click
+{
+    display: flex;
+    align-content: space-around;
+}
+
+form
+{
+    display: flex;
+    flex-wrap: wrap;
+}
