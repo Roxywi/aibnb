@@ -13,6 +13,7 @@ header
     height: 20vw;
     background-color: #FF5760;
     background-image: url("./images/phare.jpg");
+
 }
 
 .researchzone
@@ -47,15 +48,26 @@ form
     
 article
 {
-    margin: 80px;   
+    display: flex;
+    flex-direction: column;
+    margin: 80px; 
+    background-color: aquamarine;  
 
 }
 
-
-
+h3
 {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
 }
+.blocs
+{
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    align-content: space-between;
+}
+
 /*avis*/
 
 
@@ -69,9 +81,11 @@ article
 footer
 {
     display: flex;
+    background-color: chocolate;
     margin: 80px;
     flex-direction: row;
     align-items: baseline;
+    
 }
 
 /*@mediascreen*/
