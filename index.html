@@ -10,198 +10,238 @@
 </head>
 
 <body>
-    <!--header-->
-    <header>
-        <div class="headertext">
-            <h1>Réserver un séjour. Accueillez des voyageurs. Directement sur Airbnb.</h1>
-            <div class="click">
-                <h2 class="explorer">Trouvez des logements et des activités <br />
-                    <a href="Explorerlink">Explorer</a>
-                </h2>
-                <h2 class="accueillir">Réserver un séjour <br />
-                    <a href="Accueillirlink">Accueillir</a>
-                </h2>
+    <div class="blocpage">
+        <!--header-->
+        <header>
+            <div class="headertext">
+                <h1>Réserver un séjour. Accueillez des voyageurs. Directement sur Airbnb.</h1>
+                <div class="click">
+                    <h2 class="explorer">Trouvez des logements et des activités <br />
+                        <a href="Explorerlink">Explorer</a>
+                    </h2>
+                    <h2 class="accueillir">Réserver un séjour <br />
+                        <a href="Accueillirlink">Accueillir</a>
+                    </h2>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!--searchzone-->
-    <researchzone>
+        <!--searchzone-->
+        <researchzone>
 
-        <h3>Réservez des logements et des expériences uniques</h3>
+            <h3>Réservez des logements et des expériences uniques</h3>
 
-        <form method="post" action="traitement.php">
+            <form method="post" action="traitement.php">
 
-            <div class="lieu">
-                <p>
-                    <label for="Où">Où</label><br />
-                    <input type="text" name="Où" id="Où" placeholder="Barcelone">
-                </p>
-            </div>
-
-
-            <div class="dates">
-                <p>
-                    Arrivée - Départ <br />
-
-                    <label for="Date">Arrivée</label>
-                    <input type="date" name="Arrivée" id="Arrivée">
-                </p>
-                <p>
-                    <label for="Date">Départ</label>
-                    <input type="date" name="Départ" id="Départ">
-                </p>
-            </div>
-
-
-            <div class="voyageurs">
-                <p>
-                    <label for="Number">VOYAGEURS</label><br />
-                    <select name="nombre_voyageurs" id="nombre_adultes">
-                        <option value="1 voyageur">1 voyageur</option>
-                        <option value="2 voyageurs">2 voyageurs</option>
-                        <option value="3 voyageurs">3 voyageurs</option>
-                        <option value="4 voyageurs">4 voyageurs</option>
-                        <option value="5 voyageurs">5 voyageurs</option>
-                        <option value="6 voyageurs">6 voyageurs</option>
-                        <option value="7 voyageurs">7 voyageurs</option>
-                        <option value="8 voyageurs">8 voyageurs</option>
-                        <option value="9 voyageurs">9 voyageurs</option>
-                        <option value="10 voyageurs">10 voyageurs</option>
-                        <option value="11 voyageurs">11 voyageurs</option>
-                        <option value="12 voyageurs">12 voyageurs</option>
-                        <option value="13 voyageurs">13 voyageurs</option>
-                        <option value="14 voyageurs">14 voyageurs</option>
-                        <option value="15 voyageurs">15 voyageurs</option>
-                        <option value="16 voyageurs">16 voyageurs</option>
-                    </select>
-                </p>
-            </div>
-
-            <div class="people">
-                <fieldset>
+                <div class="lieu">
                     <p>
-                        <label for="Number">ADULTES</label><br />
-                        <select name="nombre_adultes" id="nombre_adultes">
-                            <option value="1 adulte">1 adulte</option>
-                            <option value="2 adultes">2 adultes</option>
-                            <option value="3 adultes">3 adultes</option>
-                            <option value="4 adultes">4 adultes</option>
-                            <option value="5 adultes">5 adultes</option>
-                            <option value="6 adultes">6 adultes</option>
-                            <option value="7 adultes">7 adultes</option>
-                            <option value="8 adultes">8 adultes</option>
-                            <option value="9 adultes">9 adultes</option>
-                            <option value="10 adultes">10 adultes</option>
-                            <option value="11 adultes">11 adultes</option>
-                            <option value="12 adultes">12 adultes</option>
-                            <option value="13 adultes">13 adultes</option>
-                            <option value="14 adultes">14 adultes</option>
-                            <option value="15 adultes">15 adultes</option>
-                            <option value="16 adultes">16 adultes</option>
+                        <label for="Où">Où</label><br />
+                        <input type="text" name="Où" id="Où" placeholder="Barcelone">
+                    </p>
+                </div>
+
+
+                <div class="dates">
+                    <p>
+                        Arrivée - Départ <br />
+
+                        <label for="Date">Arrivée</label>
+                        <input type="date" name="Arrivée" id="Arrivée">
+                    </p>
+                    <p>
+                        <label for="Date">Départ</label>
+                        <input type="date" name="Départ" id="Départ">
+                    </p>
+                </div>
+
+
+                <div class="voyageurs">
+                    <p>
+                        <label for="Number">VOYAGEURS</label><br />
+                        <select name="nombre_voyageurs" id="nombre_adultes">
+                            <option value="1 voyageur">1 voyageur</option>
+                            <option value="2 voyageurs">2 voyageurs</option>
+                            <option value="3 voyageurs">3 voyageurs</option>
+                            <option value="4 voyageurs">4 voyageurs</option>
+                            <option value="5 voyageurs">5 voyageurs</option>
+                            <option value="6 voyageurs">6 voyageurs</option>
+                            <option value="7 voyageurs">7 voyageurs</option>
+                            <option value="8 voyageurs">8 voyageurs</option>
+                            <option value="9 voyageurs">9 voyageurs</option>
+                            <option value="10 voyageurs">10 voyageurs</option>
+                            <option value="11 voyageurs">11 voyageurs</option>
+                            <option value="12 voyageurs">12 voyageurs</option>
+                            <option value="13 voyageurs">13 voyageurs</option>
+                            <option value="14 voyageurs">14 voyageurs</option>
+                            <option value="15 voyageurs">15 voyageurs</option>
+                            <option value="16 voyageurs">16 voyageurs</option>
                         </select>
                     </p>
+                </div>
 
-                    <p>
-                        <label for="Number">ENFANTS</label><br />
-                        <select name="nombre_enfants" id="nombre_enfants">
-                            <option value="1 enfant">1 enfant</option>
-                            <option value="2 enfants">2 enfants</option>
-                            <option value="3 enfants">3 enfants</option>
-                            <option value="4 enfants">4 enfants</option>
-                            <option value="5 enfants">5 enfants</option>
-                            <option value="6 enfants">6 enfants</option>
-                            <option value="7 enfants">7 enfants</option>
-                            <option value="8 enfants">8 enfants</option>
-                            <option value="9 enfants">9 enfants</option>
-                            <option value="10 enfants">10 enfants</option>
-                            <option value="11 enfants">11 enfants</option>
-                            <option value="12 enfants">12 enfants</option>
-                            <option value="13 enfants">13 enfants</option>
-                            <option value="14 enfants">14 enfants</option>
-                            <option value="15 enfants">15 enfants</option>
-                            <option value="16 enfants">16 enfants</option>
-                        </select>
-                    </p>
-                </fieldset>
+                <div class="people">
+                    <fieldset>
+                        <p>
+                            <label for="Number">ADULTES</label><br />
+                            <select name="nombre_adultes" id="nombre_adultes">
+                                <option value="1 adulte">1 adulte</option>
+                                <option value="2 adultes">2 adultes</option>
+                                <option value="3 adultes">3 adultes</option>
+                                <option value="4 adultes">4 adultes</option>
+                                <option value="5 adultes">5 adultes</option>
+                                <option value="6 adultes">6 adultes</option>
+                                <option value="7 adultes">7 adultes</option>
+                                <option value="8 adultes">8 adultes</option>
+                                <option value="9 adultes">9 adultes</option>
+                                <option value="10 adultes">10 adultes</option>
+                                <option value="11 adultes">11 adultes</option>
+                                <option value="12 adultes">12 adultes</option>
+                                <option value="13 adultes">13 adultes</option>
+                                <option value="14 adultes">14 adultes</option>
+                                <option value="15 adultes">15 adultes</option>
+                                <option value="16 adultes">16 adultes</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="Number">ENFANTS</label><br />
+                            <select name="nombre_enfants" id="nombre_enfants">
+                                <option value="1 enfant">1 enfant</option>
+                                <option value="2 enfants">2 enfants</option>
+                                <option value="3 enfants">3 enfants</option>
+                                <option value="4 enfants">4 enfants</option>
+                                <option value="5 enfants">5 enfants</option>
+                                <option value="6 enfants">6 enfants</option>
+                                <option value="7 enfants">7 enfants</option>
+                                <option value="8 enfants">8 enfants</option>
+                                <option value="9 enfants">9 enfants</option>
+                                <option value="10 enfants">10 enfants</option>
+                                <option value="11 enfants">11 enfants</option>
+                                <option value="12 enfants">12 enfants</option>
+                                <option value="13 enfants">13 enfants</option>
+                                <option value="14 enfants">14 enfants</option>
+                                <option value="15 enfants">15 enfants</option>
+                                <option value="16 enfants">16 enfants</option>
+                            </select>
+                        </p>
+                    </fieldset>
+                </div>
+
+                <input type="submit" value="Rechercher" />
+
+
+            </form>
+        </researchzone>
+
+        <article>
+            <!--avis-->
+            <div class="avis">
+                <h3>France: ce que les autres ont pensé des logements</h3>
+                <div class="blocs">
+                    <div>Bloc1</div>
+                    <div>Bloc2</div>
+                    <div>Bloc3</div>
+                </div>
+
             </div>
 
-            <input type="submit" value="Rechercher" />
+            <!--CGU-->
+            <div class="CGU">
+                <h3>Voyager avec Airbnb</h3>
+
+                <div class="blocs">
+                    <img src="">
+                    <h4>Assistance utilisateur 24/24</h4>
+                    <p>Nous sommes là pour vous jour et nuit. Parlez à notre équipe d'assistance où que vous soyez et à
+                        toute
+                        heure.
+                    </p>
+
+                    <h4>Charte d'hospitalité générale</h4>
+                    <p>Les voyageurs évaluent leurs hôtes après chaque voyage. Tous les hôtes doivent obtenir une
+                        évaluation
+                        minimale et
+                        se conformer à notre charte d'hospitalité pour rester sur Airbnb.</p>
+
+                    <h4>Hôte 5 étoiles</h4>
+                    <p>Entre les draps toujours frais et les meilleures recommandations du quartier, l'hospitalité est
+                        une
+                        seconde
+                        nature chez les hôtes Airbnb.</p>
+                </div>
+            </div>
+
+            <!--instantanéité-->
+            <div class="instantanéité">
+                <h3>Réservé à l'instant en France</h3>
 
 
-        </form>
-    </researchzone>
+                <div class="blocs">
+                    <div>Bloc1</div>
+                    <div>Bloc2</div>
+                    <div>Bloc3</div>
+                    <div>Bloc4</div>
+                </div>
+            </div>
 
-    <!--avis-->
-    <h3>France: ce que les autres ont pensé des logements</h3>
+            <!--disponibilités-->
+            <div class="disponibilités">
+                <h3>Quand voyagez-vous?</h3>
+                <p>Vérifiez la disponibilité et le prix des dates.</p>
+                <input type="submit" value="Ajouter des dates" />
+            </div>
+        </article>
 
-    <!--CGU-->
-    <h3>Voyager avec Airbnb</h3>
+        <!--footer-->
+        <footer>
+            <div class="1">
+                <h5>Airbnb</h5>
+                <p>Carrière</p>
+                <p>Actualités</p>
+                <p>Règles</p>
+                <p>Aide</p>
+                <p>Diversité et intégration</p>
+                <p>Coordonnées de l'entreprise</p>
+            </div>
 
-    <img src="" <h4>Assistance utilisateur 24/24</h4>
-    <p>Nous sommes là pour vous jour et nuit. Parlez à notre équipe d'assistance où que vous soyez et à toute heure.</p>
+            <div class="2">
+                <h5>Découvrir</h5>
+                <p>Confiance et sécurité</p>
+                <p>Travel Credit</p>
+                <p>Airbnb Citizen</p>
+                <p>Voyage d'affaires</p>
+                <p>Guides</p>
+                <p>Airbnbmag</p>
+            </div>
 
-    <h4>Charte d'hospitalité générale</h4>
-    <p>Les voyageurs évaluent leurs hôtes après chaque voyage. Tous les hôtes doivent obtenir une évaluation minimale et
-        se conformer à notre charte d'hospitalité pour rester sur Airbnb.</p>
+            <div class="3">
+                <h5>Hébergement</h5>
+                <p>Pourquoi être hôte</p>
+                <p>Hospitalité</p>
+                <p>Hébergement responsable</p>
+                <p>Community Center</p>
+                <p>Organiser une expérience Nouveau</p>
+                <p>Open Homes</p>
+            </div>
 
-    <h4>Hôte 5 étoiles</h4>
-    <p>Entre les draps toujours frais et les meilleures recommandations du quartier, l'hospitalité est une seconde
-        nature chez les hôtes Airbnb.</p>
-
-    <!--instantanéité-->
-    <h3>Réservé à l'instant en France</h3>
-
-
-
-    <div>Bloc1</div>
-    <div>Bloc2</div>
-    <div>Bloc3</div>
-    <div>Bloc4</div>
-
-    <!--disponibilités-->
-    <h3>Quand voyagez-vous?</h3>
-    <p>Vérifiez la disponibilité et le prix des dates.</p>
-    <input type="submit" value="Ajouter des dates" />
-
-    <!--footer-->
-    <footer>
-        <h5>Airbnb</h5>
-        <p>Carrière</p>
-        <p>Actualités</p>
-        <p>Règles</p>
-        <p>Aide</p>
-        <p>Diversité et intégration</p>
-        <p>Coordonnées de l'entreprise</p>
-
-        <h5>Découvrir</h5>
-        <p>Confiance et sécurité</p>
-        <p>Travel Credit</p>
-        <p>Airbnb Citizen</p>
-        <p>Voyage d'affaires</p>
-        <p>Guides</p>
-        <p>Airbnbmag</p>
-
-        <h5>Hébergement</h5>
-        <p>Pourquoi être hôte</p>
-        <p>Hospitalité</p>
-        <p>Hébergement responsable</p>
-        <p>Community Center</p>
-        <p>Organiser une expérience Nouveau</p>
-        <p>Open Homes</p>
-
-        <h5>logo FB logo twitter logo Insta</h5>
-        <p>Conditions</p>
-        <p>Politique de confidentialité</p>
-        <p>Plan du site</p>
-        <p>Fonctionnement du site</p>
+            <div class="4">
+                <h5>logo FB logo twitter logo Insta</h5>
+                <p>Conditions</p>
+                <p>Politique de confidentialité</p>
+                <p>Plan du site</p>
+                <p>Fonctionnement du site</p>
+            </div>
 
 
-        <p>logo Airbnb logo C 2019 Airbnb, Inc. All rights reserved.</p>
-    </footer>
+        </footer>
 
+        <aside>
+            <div class="logosfoot">
+                <p>logo Airbnb logo C 2019 Airbnb, Inc. All rights reserved.</p>
+            </div>
+        </aside>
 
-
+    </div>
 </body>
 
 </html>

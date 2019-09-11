@@ -4,6 +4,8 @@ body
     padding: 0;
 }
 
+
+
 /*header*/
 header
 {
@@ -11,6 +13,11 @@ header
     height: 20vw;
     background-color: #FF5760;
     background-image: url("./images/phare.jpg");
+}
+
+.researchzone
+{
+   margin: 80px;
 }
 
 .headertext
@@ -38,21 +45,34 @@ form
     justify-content: center;
 }
     
-.saisiezone
+article
 {
+    margin: 80px;   
 
 }
 
-h3
-{
-    margin: 20px;
-}
 
+
+{
+    flex-direction: row;
+}
 /*avis*/
+
+
 /*CGU*/
+
 /*instantanéité*/
+
 /*disponibilités*/
+
 /*footer*/
+footer
+{
+    display: flex;
+    margin: 80px;
+    flex-direction: row;
+    align-items: baseline;
+}
 
 /*@mediascreen*/
 @media screen and (max-width:1024px)
