@@ -2,24 +2,26 @@ body
 {
     margin: 0;
     padding: 0;
+    
 }
 
-
+@font-face
+{
+    font-family: monserrat;
+    src: url(./Polices/Montserrat-Regular.otf);  
+}
 
 /*header*/
 header
 {
     width: 100vw;
     height: 30vw;
-    *background-color: #FF5760;
     background-image: url("./images/phare5.jpg");
-    background-attachment: fixed;
-    background-size: 1200px;
+    background-size: 1300px;
     opacity: 1;
     
 
 }
-
 
 .headertext
 {
@@ -34,15 +36,29 @@ header
 .click
 {
     display: flex;
-    padding: 20px 500px 40px 0px;
-    text-align: left;
+    padding: 20px 400px 40px 0px;
+    text-align: center;
     flex-flow: wrap row;
     justify-content: space-around;
 }
 
 span
 {
-    border-style: solid;
+    padding: 1px 5px 5px 5px;
+    border-style: hidden;
+    *background: rgb(79, 67, 90);
+}
+
+.explorerclick
+{
+    background: white;
+    color: black;
+}
+
+a
+{
+    color: beige;
+    font-size: 0.9em;
 }
 
 /*searchzone*/
@@ -50,11 +66,11 @@ nav
 {
     display: flex;
     width: 100vw;
-    height: 20vw;
+    height: 10vw;
+    padding: 0px 0px 20px 100px;
     flex-flow: row wrap;
-    justify-content: center;
+    *justify-content: center;
     *background-color: #FF5760;
-
 }
 
 form
@@ -62,76 +78,92 @@ form
     display: flex;
     align-items: center;
     text-align: left;   
+    justify-content: center;
 }
 
-.blocsnav
-{
-    display: flex;
-    justify-content: space-around;
-}
-
-
-    
+ /*article*/   
 article
 {
     display: flex;
-    padding: 0px;
+    padding-left: 0px;
+    padding-bottom: 40px;
     flex-direction: column;
     align-content: center;
-    margin: 20px 20px 20px 20px; 
+    *margin: 20px 20px 20px 20px; 
     *background-color: aquamarine;  
 
 }
 
-
-
-
-h3
-{
-    display: flex;
-    flex-direction: column;
-}
 .blocs
 {
     display: flex;
-    padding: 10px 10px 10px 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    *padding: 10px 10px 10px 60px;
     float: none;
-    text-align: left;
-    flex-direction: row;
     justify-content: center;
 }
 
-figure
+*figure
 {
     display: flex;
-    
-    align-items: left;
+    *align-items: left;
+    padding-left: 0px;
 }
 
-p
+section
 {
-    color: black;
-    font-weight: bold;
-    font-size: small;
+    padding-left: 100px;
 }
-/*avis*/
-
-
-/*CGU*/
-
-/*instantanéité*/
-
-/*disponibilités*/
 
 /*footer*/
 footer
 {
     display: flex;
-    background-color: chocolate;
-    margin: 80px;
+    background-color: rgb(250, 90, 96);
+    padding: 10px 40px 10px 80px;
+    justify-content: space-around;
     flex-direction: row;
     align-items: baseline;
     
+}
+
+/*aside*/
+aside
+{
+    padding-left: 100px;
+}
+
+/*polices*/
+h1
+{
+    font-size: 3em;
+}
+
+h2
+{
+    font-size: 1.5em;
+}
+
+h3
+{
+    font-size: 1.6em;
+    padding-left: 0px;
+}
+
+h4
+{
+    display: flex;
+    font-size: 1.1em;
+    padding: 0px 50px 0px 0px;
+    align-self: flex-end;
+}
+
+p
+{
+    color: black;
+    *font-weight: bold;
+    font-size: 1em;
 }
 
 /*@mediascreen*/
