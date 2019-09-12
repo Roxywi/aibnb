@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Airbcopy</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,10 +18,16 @@
             <h1>Réserver un séjour. Accueillez des voyageurs.<br /> Directement sur Airbnb.</h1>
             <div class="click">
                 <h2 class="explorer">Trouvez des logements et des activités <br />
-                    <span><a href="Explorerlink">Explorer</a></span>
+                    <span>
+                        <a
+                            href="https://www.airbnb.fr/a/?af=43720035&c=.pi0.pk4063331735_192900875462_c_12026464216&sem_position=1t1&sem_target=aud-414944083185%3Akwd-12026464216&location_of_interest=&location_physical=9055230&gclid=Cj0KCQjw2efrBRD3ARIsAEnt0ehpHYua4nmBz7uJgCkYcnqzqfa8TvLuXQsk63wTK_P_AClpKfm1l44aAktYEALw_wcB">Explorer
+                        </a>
+                    </span>
+
                 </h2>
                 <h2 class="accueillir">Réserver un séjour <br />
-                    <a href="Accueillirlink">Accueillir</a>
+                    <span><a
+                            href="https://www.airbnb.fr/host/homes?af=43720035&c=.pi0.pk4063331735_192900875462_c_12026464216&sem_position=1t1&sem_target=aud-414944083185%3Akwd-12026464216&location_of_interest=&location_physical=9055230&gclid=Cj0KCQjw2efrBRD3ARIsAEnt0ehpHYua4nmBz7uJgCkYcnqzqfa8TvLuXQsk63wTK_P_AClpKfm1l44aAktYEALw_wcB">Accueillir</a></span>
                 </h2>
             </div>
         </div>
@@ -28,9 +35,10 @@
 
     <!--searchzone-->
 
-
-    <h3>Réservez des logements et des expériences uniques</h3>
     <nav>
+        <div class="titrenav">
+            <h3>Réservez des logements et des expériences uniques</h3>
+        </div>
         <form method="post" action="traitement.php">
             <div class="blocsnav">
                 <div class="lieu">
@@ -40,14 +48,13 @@
             </div>
 
             <div class="blocsnav">
-                <div class="dates">
-                    Arrivée - Départ <br />
-                    <label for="Date">Arrivée</label>
-                    <input type="date" name="Arrivée" id="Arrivée">
+                <div class="dates">Arrivée - Départ</div><br />
+                <label for="Date" id="Arrivée">Arrivée</label>
+                <input type="date" name="Arrivée" id="Arrivée">
 
-                    <label for="Date">Départ</label>
-                    <input type="date" name="Départ" id="Départ">
-                </div>
+                <label for="Date">Départ</label>
+                <input type="date" name="Départ" id="Départ">
+            </div>
             </div>
 
             <div class="blocsnav">
@@ -123,7 +130,6 @@
 
             <input type="submit" value="Rechercher" />
         </form>
-
     </nav>
 
     <article>
@@ -167,13 +173,13 @@
                     toute
                     heure.
                 </p>
-
+                <img src="">
                 <h4>Charte d'hospitalité générale</h4><br />
                 <p>Les voyageurs évaluent leurs hôtes après chaque voyage. Tous les hôtes doivent obtenir une
                     évaluation
                     minimale et
                     se conformer à notre charte d'hospitalité pour rester sur Airbnb.</p>
-
+                <img src="">
                 <h4>Hôte 5 étoiles</h4><br />
                 <p>Entre les draps toujours frais et les meilleures recommandations du quartier, l'hospitalité est
                     une
@@ -220,7 +226,7 @@
         <section>
             <h3>Quand voyagez-vous?</h3>
             <p>Vérifiez la disponibilité et le prix des dates.</p>
-            <input type="submit" value="Ajouter des dates" />
+            <a href="#Arrivée"><input type="submit" value="Ajouter des dates" /></a>
         </section>
     </article>
 
@@ -257,7 +263,7 @@
         </div>
 
         <div class="4">
-            <h5>logo FB logo twitter logo Insta</h5>
+            <h5>logo twitter logo Insta</h5>
             <p>Conditions</p>
             <p>Politique de confidentialité</p>
             <p>Plan du site</p>
