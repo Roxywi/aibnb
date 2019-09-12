@@ -10,237 +10,270 @@
 </head>
 
 <body>
-    <div class="blocpage">
-        <!--header-->
-        <header>
-            <div class="headertext">
-                <h1>Réserver un séjour. Accueillez des voyageurs. Directement sur Airbnb.</h1>
-                <div class="click">
-                    <h2 class="explorer">Trouvez des logements et des activités <br />
-                        <a href="Explorerlink">Explorer</a>
-                    </h2>
-                    <h2 class="accueillir">Réserver un séjour <br />
-                        <a href="Accueillirlink">Accueillir</a>
-                    </h2>
-                </div>
+
+    <!--header-->
+    <header>
+        <div class="headertext">
+            <h1>Réserver un séjour. Accueillez des voyageurs.<br /> Directement sur Airbnb.</h1>
+            <div class="click">
+                <h2 class="explorer">Trouvez des logements et des activités <br />
+                    <span><a href="Explorerlink">Explorer</a></span>
+                </h2>
+                <h2 class="accueillir">Réserver un séjour <br />
+                    <a href="Accueillirlink">Accueillir</a>
+                </h2>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <!--searchzone-->
-        <researchzone>
+    <!--searchzone-->
 
-            <h3>Réservez des logements et des expériences uniques</h3>
 
-            <form method="post" action="traitement.php">
-
+    <h3>Réservez des logements et des expériences uniques</h3>
+    <nav>
+        <form method="post" action="traitement.php">
+            <div class="blocsnav">
                 <div class="lieu">
-                    <p>
-                        <label for="Où">Où</label><br />
-                        <input type="text" name="Où" id="Où" placeholder="Barcelone">
-                    </p>
+                    <label for="Où">Où</label><br />
+                    <input type="text" name="Où" id="Où" placeholder="Barcelone">
                 </div>
+            </div>
 
-
+            <div class="blocsnav">
                 <div class="dates">
-                    <p>
-                        Arrivée - Départ <br />
+                    Arrivée - Départ <br />
+                    <label for="Date">Arrivée</label>
+                    <input type="date" name="Arrivée" id="Arrivée">
 
-                        <label for="Date">Arrivée</label>
-                        <input type="date" name="Arrivée" id="Arrivée">
-                    </p>
-                    <p>
-                        <label for="Date">Départ</label>
-                        <input type="date" name="Départ" id="Départ">
-                    </p>
+                    <label for="Date">Départ</label>
+                    <input type="date" name="Départ" id="Départ">
                 </div>
+            </div>
 
-
+            <div class="blocsnav">
                 <div class="voyageurs">
-                    <p>
-                        <label for="Number">VOYAGEURS</label><br />
-                        <select name="nombre_voyageurs" id="nombre_adultes">
-                            <option value="1 voyageur">1 voyageur</option>
-                            <option value="2 voyageurs">2 voyageurs</option>
-                            <option value="3 voyageurs">3 voyageurs</option>
-                            <option value="4 voyageurs">4 voyageurs</option>
-                            <option value="5 voyageurs">5 voyageurs</option>
-                            <option value="6 voyageurs">6 voyageurs</option>
-                            <option value="7 voyageurs">7 voyageurs</option>
-                            <option value="8 voyageurs">8 voyageurs</option>
-                            <option value="9 voyageurs">9 voyageurs</option>
-                            <option value="10 voyageurs">10 voyageurs</option>
-                            <option value="11 voyageurs">11 voyageurs</option>
-                            <option value="12 voyageurs">12 voyageurs</option>
-                            <option value="13 voyageurs">13 voyageurs</option>
-                            <option value="14 voyageurs">14 voyageurs</option>
-                            <option value="15 voyageurs">15 voyageurs</option>
-                            <option value="16 voyageurs">16 voyageurs</option>
-                        </select>
-                    </p>
-                </div>
-
-                <div class="people">
-                    <fieldset>
-                        <p>
-                            <label for="Number">ADULTES</label><br />
-                            <select name="nombre_adultes" id="nombre_adultes">
-                                <option value="1 adulte">1 adulte</option>
-                                <option value="2 adultes">2 adultes</option>
-                                <option value="3 adultes">3 adultes</option>
-                                <option value="4 adultes">4 adultes</option>
-                                <option value="5 adultes">5 adultes</option>
-                                <option value="6 adultes">6 adultes</option>
-                                <option value="7 adultes">7 adultes</option>
-                                <option value="8 adultes">8 adultes</option>
-                                <option value="9 adultes">9 adultes</option>
-                                <option value="10 adultes">10 adultes</option>
-                                <option value="11 adultes">11 adultes</option>
-                                <option value="12 adultes">12 adultes</option>
-                                <option value="13 adultes">13 adultes</option>
-                                <option value="14 adultes">14 adultes</option>
-                                <option value="15 adultes">15 adultes</option>
-                                <option value="16 adultes">16 adultes</option>
-                            </select>
-                        </p>
-
-                        <p>
-                            <label for="Number">ENFANTS</label><br />
-                            <select name="nombre_enfants" id="nombre_enfants">
-                                <option value="1 enfant">1 enfant</option>
-                                <option value="2 enfants">2 enfants</option>
-                                <option value="3 enfants">3 enfants</option>
-                                <option value="4 enfants">4 enfants</option>
-                                <option value="5 enfants">5 enfants</option>
-                                <option value="6 enfants">6 enfants</option>
-                                <option value="7 enfants">7 enfants</option>
-                                <option value="8 enfants">8 enfants</option>
-                                <option value="9 enfants">9 enfants</option>
-                                <option value="10 enfants">10 enfants</option>
-                                <option value="11 enfants">11 enfants</option>
-                                <option value="12 enfants">12 enfants</option>
-                                <option value="13 enfants">13 enfants</option>
-                                <option value="14 enfants">14 enfants</option>
-                                <option value="15 enfants">15 enfants</option>
-                                <option value="16 enfants">16 enfants</option>
-                            </select>
-                        </p>
-                    </fieldset>
-                </div>
-
-                <input type="submit" value="Rechercher" />
-
-
-            </form>
-        </researchzone>
-
-        <article>
-            <!--avis-->
-            <div class="a">
-                <h3>France: ce que les autres ont pensé des logements</h3>
-                <div class="blocs">
-                    <div>Bloc1</div>
-                    <div>Bloc2</div>
-                    <div>Bloc3</div>
+                    <label for="Number">VOYAGEURS</label><br />
+                    <select name="nombre_voyageurs" id="nombre_adultes">
+                        <option value="1 voyageur">1 voyageur</option>
+                        <option value="2 voyageurs">2 voyageurs</option>
+                        <option value="3 voyageurs">3 voyageurs</option>
+                        <option value="4 voyageurs">4 voyageurs</option>
+                        <option value="5 voyageurs">5 voyageurs</option>
+                        <option value="6 voyageurs">6 voyageurs</option>
+                        <option value="7 voyageurs">7 voyageurs</option>
+                        <option value="8 voyageurs">8 voyageurs</option>
+                        <option value="9 voyageurs">9 voyageurs</option>
+                        <option value="10 voyageurs">10 voyageurs</option>
+                        <option value="11 voyageurs">11 voyageurs</option>
+                        <option value="12 voyageurs">12 voyageurs</option>
+                        <option value="13 voyageurs">13 voyageurs</option>
+                        <option value="14 voyageurs">14 voyageurs</option>
+                        <option value="15 voyageurs">15 voyageurs</option>
+                        <option value="16 voyageurs">16 voyageurs</option>
+                    </select>
                 </div>
 
             </div>
 
-            <!--CGU-->
-            <div class="b">
-                <h3>Voyager avec Airbnb</h3>
-                <div class="blocs">
-                    <img src="">
-                    <h4>Assistance utilisateur 24/24</h4>
-                    <p>Nous sommes là pour vous jour et nuit. Parlez à notre équipe d'assistance où que vous soyez et à
-                        toute
-                        heure.
-                    </p>
 
-                    <h4>Charte d'hospitalité générale</h4>
-                    <p>Les voyageurs évaluent leurs hôtes après chaque voyage. Tous les hôtes doivent obtenir une
-                        évaluation
-                        minimale et
-                        se conformer à notre charte d'hospitalité pour rester sur Airbnb.</p>
+            <div class="people">
+                <div class="blocsnav">
+                    <label for="Number">ADULTES</label><br />
+                    <select name="nombre_adultes" id="nombre_adultes">
+                        <option value="1 adulte">1 adulte</option>
+                        <option value="2 adultes">2 adultes</option>
+                        <option value="3 adultes">3 adultes</option>
+                        <option value="4 adultes">4 adultes</option>
+                        <option value="5 adultes">5 adultes</option>
+                        <option value="6 adultes">6 adultes</option>
+                        <option value="7 adultes">7 adultes</option>
+                        <option value="8 adultes">8 adultes</option>
+                        <option value="9 adultes">9 adultes</option>
+                        <option value="10 adultes">10 adultes</option>
+                        <option value="11 adultes">11 adultes</option>
+                        <option value="12 adultes">12 adultes</option>
+                        <option value="13 adultes">13 adultes</option>
+                        <option value="14 adultes">14 adultes</option>
+                        <option value="15 adultes">15 adultes</option>
+                        <option value="16 adultes">16 adultes</option>
+                    </select>
 
-                    <h4>Hôte 5 étoiles</h4>
-                    <p>Entre les draps toujours frais et les meilleures recommandations du quartier, l'hospitalité est
-                        une
-                        seconde
-                        nature chez les hôtes Airbnb.</p>
+                    <label for="Number">ENFANTS</label><br />
+                    <select name="nombre_enfants" id="nombre_enfants">
+                        <option value="1 enfant">1 enfant</option>
+                        <option value="2 enfants">2 enfants</option>
+                        <option value="3 enfants">3 enfants</option>
+                        <option value="4 enfants">4 enfants</option>
+                        <option value="5 enfants">5 enfants</option>
+                        <option value="6 enfants">6 enfants</option>
+                        <option value="7 enfants">7 enfants</option>
+                        <option value="8 enfants">8 enfants</option>
+                        <option value="9 enfants">9 enfants</option>
+                        <option value="10 enfants">10 enfants</option>
+                        <option value="11 enfants">11 enfants</option>
+                        <option value="12 enfants">12 enfants</option>
+                        <option value="13 enfants">13 enfants</option>
+                        <option value="14 enfants">14 enfants</option>
+                        <option value="15 enfants">15 enfants</option>
+                        <option value="16 enfants">16 enfants</option>
+                    </select>
                 </div>
+
             </div>
 
-            <!--instantanéité-->
-            <div class="c">
-                <h3>Réservé à l'instant en France</h3>
+            <input type="submit" value="Rechercher" />
+        </form>
 
+    </nav>
 
-                <div class="blocs">
-                    <div>Bloc1</div>
-                    <div>Bloc2</div>
-                    <div>Bloc3</div>
-                    <div>Bloc4</div>
-                </div>
+    <article>
+        <!--avis-->
+        <section>
+            <h3>France: ce que les autres ont pensé des logements</h3>
+            <div class="blocs">
+                <figure>
+                    <div><a href="https://www.airbnb.fr/rooms/1930715?source_impression_id=p3_1568282029_sbqTPl917XaRyOho"
+                            target="_blank"><img src="./images/studio1mini.jpg" /></a>
+                        <p>J ai beaucoup aime la décoration de l appartement. Le mur végétal donne un côté chaleureux.
+                            Chaque mètre carré est bien pensé.</p>
+                    </div>
+                </figure>
+
+                <figure>
+                    <div><a href="https://www.airbnb.fr/rooms/4204169?source_impression_id=p3_1568282744_iBoIGWIZnAq%2FK9d9"
+                            target="_blank"><img src="./images/studio2mini.jpg" /></a>
+                        <p>L'appartement de Joris est tout simplement sublime et idéalement situé, au pied du palais des
+                            Papes. Tout le charme et la magie de la ville.</p>
+                    </div>
+                </figure>
+
+                <figure>
+                    <div><a href="https://www.airbnb.fr/rooms/16284708?source_impression_id=p3_1568282795_tyL8DX93ZGq2Jz4M"
+                            target="_blank"><img src="./images/studio3mini.jpg" /></a>
+                        <p>Très bon séjour à l'école Buissonière. On s'y sent bien! Corinne est chaleureuse, sympathique
+                            et aux petits soins pour ses invités.</p>
+                    </div>
+                </figure>
             </div>
+        </section>
 
-            <!--disponibilités-->
-            <div class="d">
-                <h3>Quand voyagez-vous?</h3>
-                <p>Vérifiez la disponibilité et le prix des dates.</p>
-                <input type="submit" value="Ajouter des dates" />
+        <!--CGU-->
+        <section>
+            <h3>Voyager avec Airbnb</h3>
+            <div class="blocs">
+                <img src="">
+                <h4>Assistance utilisateur 24/24</h4><br />
+                <p>Nous sommes là pour vous jour et nuit. Parlez à notre équipe d'assistance où que vous soyez et à
+                    toute
+                    heure.
+                </p>
+
+                <h4>Charte d'hospitalité générale</h4><br />
+                <p>Les voyageurs évaluent leurs hôtes après chaque voyage. Tous les hôtes doivent obtenir une
+                    évaluation
+                    minimale et
+                    se conformer à notre charte d'hospitalité pour rester sur Airbnb.</p>
+
+                <h4>Hôte 5 étoiles</h4><br />
+                <p>Entre les draps toujours frais et les meilleures recommandations du quartier, l'hospitalité est
+                    une
+                    seconde
+                    nature chez les hôtes Airbnb.</p>
             </div>
-        </article>
+        </section>
 
-        <!--footer-->
-        <footer>
-            <div class="1">
-                <h5>Airbnb</h5>
-                <p>Carrière</p>
-                <p>Actualités</p>
-                <p>Règles</p>
-                <p>Aide</p>
-                <p>Diversité et intégration</p>
-                <p>Coordonnées de l'entreprise</p>
+        <!--instantanéité-->
+        <section>
+            <h3>Réservé à l'instant en France</h3>
+            <div class="blocs">
+                <figure>
+                    <div><a href="https://www.airbnb.fr/rooms/3567278?source_impression_id=p3_1568282958_0alnrN3zgo6yOCMM"
+                            target="_blank"><img src="./images/studio4micro.jpg" alt="studio4" /></a>
+                        <p>Amboise troglodyte chez Hélène<p></p>
+                    </div>
+                </figure>
+
+                <figure>
+                    <div><a href="https://www.airbnb.fr/rooms/1169704?source_impression_id=p3_1568282987_3TGv24JsJxs1uvoA"
+                            target="_blank"><img src="./images/studio5micro.jpg" /></a>
+                        <p>La star d'Avignon: clim-wifi-pont</p>
+                    </div>
+                </figure>
+
+                <figure>
+                    <div><a href="https://www.airbnb.fr/rooms/489668?source_impression_id=p3_1568283005_QUliB%2FoBTL9gm%2FuO"
+                            target="_blank"><img src="./images/studio6micro.jpg" /></a>
+                        <p>Une yourte au calme en Savoie</p>
+                    </div>
+                </figure>
+
+                <figure>
+                    <div><a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1568283022_%2BNFobfBYyUaH3%2Bz8"
+                            target="_blank"><img src="./images/studio7micro.jpg" /></a>
+                        <p>Villa de charme dans le sud des Landes</p>
+                    </div>
+                </figure>
             </div>
+        </section>
 
-            <div class="2">
-                <h5>Découvrir</h5>
-                <p>Confiance et sécurité</p>
-                <p>Travel Credit</p>
-                <p>Airbnb Citizen</p>
-                <p>Voyage d'affaires</p>
-                <p>Guides</p>
-                <p>Airbnbmag</p>
-            </div>
+        <!--disponibilités-->
+        <section>
+            <h3>Quand voyagez-vous?</h3>
+            <p>Vérifiez la disponibilité et le prix des dates.</p>
+            <input type="submit" value="Ajouter des dates" />
+        </section>
+    </article>
 
-            <div class="3">
-                <h5>Hébergement</h5>
-                <p>Pourquoi être hôte</p>
-                <p>Hospitalité</p>
-                <p>Hébergement responsable</p>
-                <p>Community Center</p>
-                <p>Organiser une expérience Nouveau</p>
-                <p>Open Homes</p>
-            </div>
+    <!--footer-->
+    <footer>
+        <div class="1">
+            <h5>Airbnb</h5>
+            <p>Carrière</p>
+            <p>Actualités</p>
+            <p>Règles</p>
+            <p>Aide</p>
+            <p>Diversité et intégration</p>
+            <p>Coordonnées de l'entreprise</p>
+        </div>
 
-            <div class="4">
-                <h5>logo FB logo twitter logo Insta</h5>
-                <p>Conditions</p>
-                <p>Politique de confidentialité</p>
-                <p>Plan du site</p>
-                <p>Fonctionnement du site</p>
-            </div>
+        <div class="2">
+            <h5>Découvrir</h5>
+            <p>Confiance et sécurité</p>
+            <p>Travel Credit</p>
+            <p>Airbnb Citizen</p>
+            <p>Voyage d'affaires</p>
+            <p>Guides</p>
+            <p>Airbnbmag</p>
+        </div>
+
+        <div class="3">
+            <h5>Hébergement</h5>
+            <p>Pourquoi être hôte</p>
+            <p>Hospitalité</p>
+            <p>Hébergement responsable</p>
+            <p>Community Center</p>
+            <p>Organiser une expérience Nouveau</p>
+            <p>Open Homes</p>
+        </div>
+
+        <div class="4">
+            <h5>logo FB logo twitter logo Insta</h5>
+            <p>Conditions</p>
+            <p>Politique de confidentialité</p>
+            <p>Plan du site</p>
+            <p>Fonctionnement du site</p>
+        </div>
 
 
-        </footer>
+    </footer>
 
-        <aside>
-            <div class="logosfoot">
-                <p>logo Airbnb logo C 2019 Airbnb, Inc. All rights reserved.</p>
-            </div>
-        </aside>
+    <aside>
+        <div class="logosfoot">
+            <p>logo Airbnb logo C 2019 Airbnb, Inc. All rights reserved.</p>
+        </div>
+    </aside>
 
-    </div>
+
 </body>
 
 </html>
