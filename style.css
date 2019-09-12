@@ -10,50 +10,81 @@ body
 header
 {
     width: 100vw;
-    height: 20vw;
-    background-color: #FF5760;
-    background-image: url("./images/phare.jpg");
+    height: 30vw;
+    *background-color: #FF5760;
+    background-image: url("./images/phare5.jpg");
+    background-attachment: fixed;
+    background-size: 1200px;
+    opacity: 1;
+    
 
 }
 
-.researchzone
-{
-   margin: 80px;
-}
 
 .headertext
 {
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin: 20px;    
+    padding: 80px; 
+    color: black;
+    font-weight: bold;   
 }
 
 .click
 {
     display: flex;
-    align-content: flex-start;
-    flex-flow: wrap column;
+    padding: 20px 500px 40px 0px;
+    text-align: left;
+    flex-flow: wrap row;
+    justify-content: space-around;
+}
+
+span
+{
+    border-style: solid;
 }
 
 /*searchzone*/
+nav
+{
+    display: flex;
+    width: 100vw;
+    height: 20vw;
+    flex-flow: row wrap;
+    justify-content: center;
+    *background-color: #FF5760;
+
+}
+
 form
 {
     display: flex;
-    background: #FF5760;
-    text-align: left;
-    flex-flow: row wrap;
-    justify-content: center;
+    align-items: center;
+    text-align: left;   
 }
+
+.blocsnav
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+
     
 article
 {
     display: flex;
+    padding: 0px;
     flex-direction: column;
-    margin: 80px; 
-    background-color: aquamarine;  
+    align-content: center;
+    margin: 20px 20px 20px 20px; 
+    *background-color: aquamarine;  
 
 }
+
+
+
 
 h3
 {
@@ -63,11 +94,26 @@ h3
 .blocs
 {
     display: flex;
+    padding: 10px 10px 10px 10px;
+    float: none;
     text-align: left;
     flex-direction: row;
-    align-content: space-between;
+    justify-content: center;
 }
 
+figure
+{
+    display: flex;
+    
+    align-items: left;
+}
+
+p
+{
+    color: black;
+    font-weight: bold;
+    font-size: small;
+}
 /*avis*/
 
 
