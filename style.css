@@ -2,12 +2,12 @@ body
 {
     margin: 0;
     padding: 0;
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
 @font-face
 {
-    font-family: monserrat;
+    font-family: 'Monserrat';
     src: url(./Polices/Montserrat-Regular.otf);  
 }
 
@@ -23,12 +23,17 @@ header
 
 }
 
+.iconify
+{
+    padding: 20px 20px 0px 20px;
+}
+
 .headertext
 {
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding: 80px; 
+    padding: 40px 20px 20px 20px; 
     color: black;
     font-weight: bold;   
 }
@@ -49,15 +54,25 @@ span
     *background: rgb(79, 67, 90);
 }
 
-.explorerclick
+.click span
 {
+    width: 100px;
+    height: 0px;
+    
     background: white;
+    color: black;
+}
+
+.explorer a {
+    width: 100px;
+    height: 20px;
+    padding: 15px 50px;
+    background-color: white;
     color: black;
 }
 
 a
 {
-    color: beige;
     font-size: 0.9em;
 }
 
@@ -67,10 +82,12 @@ nav
     display: flex;
     width: 100vw;
     height: 10vw;
-    padding: 0px 0px 20px 100px;
+    padding: 20px 20px 20px 100px; 
+    border-bottom: 0.5px solid rgb(79, 67, 90);
+    /* margin: 45px 45px 45px 45px; */
     flex-flow: row wrap;
-    *justify-content: center;
-    *background-color: #FF5760;
+    /* justify-content: center; */
+    /* background-color: #FF5760; */
 }
 
 form
@@ -79,6 +96,13 @@ form
     align-items: center;
     text-align: left;   
     justify-content: center;
+    margin: 0px 45px 0px 0px;
+}
+
+.blocsnav
+{
+    display: inline-flex;
+
 }
 
  /*article*/   
@@ -114,14 +138,18 @@ article
 section
 {
     padding-left: 100px;
+    border-bottom: 0.5px solid rgb(79, 67, 90);
 }
 
 /*footer*/
 footer
 {
     display: flex;
-    background-color: rgb(250, 90, 96);
-    padding: 10px 40px 10px 80px;
+    *background-color: rgb(250, 90, 96);
+    margin-left: 0px;
+    border: solid 0.01em;
+    border-style: groove;
+    padding: 10px 40px 10px 50px;
     justify-content: space-around;
     flex-direction: row;
     align-items: baseline;
@@ -137,7 +165,7 @@ aside
 /*polices*/
 h1
 {
-    font-size: 3em;
+    font-size: 2.8em;
 }
 
 h2
@@ -157,6 +185,12 @@ h4
     font-size: 1.1em;
     padding: 0px 50px 0px 0px;
     align-self: flex-end;
+}
+
+h5
+{
+    display: flex;
+    align-content: space-between;
 }
 
 p
