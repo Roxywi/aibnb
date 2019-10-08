@@ -15,27 +15,46 @@ body
 header
 {
     width: 100vw;
-    height: 30vw;
+    height: 400px;
     background-image: url("./images/phare5.jpg");
     background-size: 1300px;
     opacity: 1;
-    
-
 }
 
-.iconify
+.logo
 {
-    padding: 20px 20px 0px 20px;
+    padding: 20px;
+    /* padding: 20px 20px 0px 20px; */
+}
+.iconify {
+    font-size: 50px;
 }
 
 .headertext
 {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    padding: 40px 20px 20px 20px; 
+    padding: 0 60px;
     color: black;
     font-weight: bold;   
+}
+
+.headertext > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header-action {
+    width: 50%;
+    text-align: center;
+}
+
+.header-action a {
+    padding: 10px;
+    background-color: #c8bda3;
+    border-radius: 5px;
+
 }
 
 .click
@@ -43,38 +62,21 @@ header
     display: flex;
     padding: 20px 400px 40px 0px;
     text-align: center;
-    flex-flow: wrap row;
+    flex-flow: row;
     justify-content: space-around;
 }
 
-span
-{
-    padding: 1px 5px 5px 5px;
-    border-style: hidden;
-    *background: rgb(79, 67, 90);
-}
 
 .click span
 {
     width: 100px;
     height: 0px;
-    
     background: white;
     color: black;
+   font-size: 0.9em;
+   padding: 5px 5px 5px 5px;
 }
 
-.explorer a {
-    width: 100px;
-    height: 20px;
-    padding: 15px 50px;
-    background-color: white;
-    color: black;
-}
-
-a
-{
-    font-size: 0.9em;
-}
 
 /*searchzone*/
 nav
@@ -83,11 +85,9 @@ nav
     width: 100vw;
     height: 10vw;
     padding: 20px 20px 20px 100px; 
-    border-bottom: 0.5px solid rgb(79, 67, 90);
-    /* margin: 45px 45px 45px 45px; */
+    border-bottom: 0.5px solid #4f435a;
     flex-flow: row wrap;
-    /* justify-content: center; */
-    /* background-color: #FF5760; */
+    justify-content: space-between;
 }
 
 form
@@ -99,10 +99,9 @@ form
     margin: 0px 45px 0px 0px;
 }
 
-.blocsnav
+.lieu, .arrivée, .participants
 {
-    display: inline-flex;
-
+    padding-right: 40px;
 }
 
  /*article*/   
@@ -118,15 +117,31 @@ article
 
 }
 
+i
+{
+    text-align: center;
+}
+
 .blocs
 {
     display: flex;
-    padding-left: 0px;
-    padding-right: 0px;
-    *padding: 10px 10px 10px 60px;
-    float: none;
+    flex-flow: row;
     justify-content: center;
 }
+
+.advantages {
+    justify-content: space-around;
+}
+
+.assistance, .charte, .hote
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 280px;
+}
+
 
 *figure
 {
@@ -138,21 +153,25 @@ article
 section
 {
     padding-left: 100px;
-    border-bottom: 0.5px solid rgb(79, 67, 90);
+    border-bottom: 0.5px groove rgb(79, 67, 90);
 }
+
+.dispo
+{
+    padding-bottom: 40px;
+    
+}
+
 
 /*footer*/
 footer
 {
     display: flex;
-    *background-color: rgb(250, 90, 96);
+    background-color: rgb(192, 193, 201);
     margin-left: 0px;
-    border: solid 0.01em;
-    border-style: groove;
-    padding: 10px 40px 10px 50px;
+    padding: 0px 40px 10px 60px;
     justify-content: space-around;
     flex-direction: row;
-    align-items: baseline;
     
 }
 
@@ -181,10 +200,11 @@ h3
 
 h4
 {
-    display: flex;
+    /* display: flex; */
     font-size: 1.1em;
-    padding: 0px 50px 0px 0px;
-    align-self: flex-end;
+    text-align: center;
+    /* padding: 0px 50px 0px 0px; */
+    /* align-self: flex-end; */
 }
 
 h5

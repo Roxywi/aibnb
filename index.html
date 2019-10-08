@@ -16,30 +16,39 @@
 
     <!--header-->
     <header>
-        <span class="iconify" data-icon="simple-icons:airbnb" data-inline="false"></span>
+        <div class="logo">
+            <span class="iconify" data-icon="simple-icons:airbnb" data-inline="false"></span>
+        </div>
         <div class="headertext">
             <h1>Réserver un séjour. Accueillez des voyageurs.<br /> Directement sur Airbnb.</h1>
-            <div class="click">
-                <div class="explorer">
+            <div>
+                <div class="header-action">
                     <h2>Trouvez des logements et des activités</h2>
                     <a
-                        href="https://www.airbnb.fr/a/?af=43720035&c=.pi0.pk4063331735_192900875462_c_12026464216&sem_position=1t1&sem_target=aud-414944083185%3Akwd-12026464216&location_of_interest=&location_physical=9055230&gclid=Cj0KCQjw2efrBRD3ARIsAEnt0ehpHYua4nmBz7uJgCkYcnqzqfa8TvLuXQsk63wTK_P_AClpKfm1l44aAktYEALw_wcB">Explorer
-                    </a>
-
+                        href="https://www.airbnb.fr/a/?af=43720035&c=.pi0.pk4063331735_192900875462_c_12026464216&sem_position=1t1&sem_target=aud-414944083185%3Akwd-12026464216&location_of_interest=&location_physical=9055230&gclid=Cj0KCQjw2efrBRD3ARIsAEnt0ehpHYua4nmBz7uJgCkYcnqzqfa8TvLuXQsk63wTK_P_AClpKfm1l44aAktYEALw_wcB">Explorer</a>
                 </div>
-                <!-- <h2 class="explorer">Trouvez des logements et des activités <br />
+                <div class="header-action">
+                    <h2>Réserver un séjour</h2>
+                    <a
+                        href="https://www.airbnb.fr/host/homes?af=43720035&c=.pi0.pk4063331735_192900875462_c_12026464216&sem_position=1t1&sem_target=aud-414944083185%3Akwd-12026464216&location_of_interest=&location_physical=9055230&gclid=Cj0KCQjw2efrBRD3ARIsAEnt0ehpHYua4nmBz7uJgCkYcnqzqfa8TvLuXQsk63wTK_P_AClpKfm1l44aAktYEALw_wcB">Accueillir</a>
+                </div>
+            </div>
+            <!-- <div class="click">
+                <h2 class="explorer">Trouvez des logements et des activités <br />
                     <span>
                         <a
                             href="https://www.airbnb.fr/a/?af=43720035&c=.pi0.pk4063331735_192900875462_c_12026464216&sem_position=1t1&sem_target=aud-414944083185%3Akwd-12026464216&location_of_interest=&location_physical=9055230&gclid=Cj0KCQjw2efrBRD3ARIsAEnt0ehpHYua4nmBz7uJgCkYcnqzqfa8TvLuXQsk63wTK_P_AClpKfm1l44aAktYEALw_wcB">Explorer
                         </a>
                     </span>
-
-                </h2> -->
-                <h2 class="accueillir">Réserver un séjour <br />
-                    <span><a
-                            href="https://www.airbnb.fr/host/homes?af=43720035&c=.pi0.pk4063331735_192900875462_c_12026464216&sem_position=1t1&sem_target=aud-414944083185%3Akwd-12026464216&location_of_interest=&location_physical=9055230&gclid=Cj0KCQjw2efrBRD3ARIsAEnt0ehpHYua4nmBz7uJgCkYcnqzqfa8TvLuXQsk63wTK_P_AClpKfm1l44aAktYEALw_wcB">Accueillir</a></span>
                 </h2>
-            </div>
+                <h2 class="accueillir">Réserver un séjour <br />
+                    <span>
+                        <a
+                            href="https://www.airbnb.fr/host/homes?af=43720035&c=.pi0.pk4063331735_192900875462_c_12026464216&sem_position=1t1&sem_target=aud-414944083185%3Akwd-12026464216&location_of_interest=&location_physical=9055230&gclid=Cj0KCQjw2efrBRD3ARIsAEnt0ehpHYua4nmBz7uJgCkYcnqzqfa8TvLuXQsk63wTK_P_AClpKfm1l44aAktYEALw_wcB">Accueillir
+                        </a>
+                    </span>
+                </h2>
+            </div> -->
         </div>
     </header>
 
@@ -49,15 +58,16 @@
         <div class="titrenav">
             <h3>Réservez des logements et des expériences uniques</h3>
         </div>
+        <div class="formulaire"></div>
         <form method="post" action="traitement.php">
-            <div class="blocsnav">
+            <div class="lieu">
                 <div class="lieu">
                     <label for="Où">Où</label><br />
                     <input type="text" name="Où" id="Où" placeholder="Barcelone">
                 </div>
             </div>
 
-            <div class="blocsnav">
+            <div class="arrivée">
                 <div class="dates">Arrivée - Départ<br /></div>
                 <label for="Date" id="Arrivée">Arrivée</label>
                 <input type="date" name="Arrivée" id="Arrivée">
@@ -65,9 +75,8 @@
                 <label for="Date">Départ</label>
                 <input type="date" name="Départ" id="Départ">
             </div>
-            </div>
 
-            <div class="blocsnav">
+            <div class="participants">
                 <div class="voyageurs">
                     <label for="Number">VOYAGEURS</label><br />
                     <select name="nombre_voyageurs" id="nombre_adultes">
@@ -176,25 +185,31 @@
         <!--CGU-->
         <section>
             <h3>Voyager avec Airbnb</h3>
-            <div class="blocs">
-                <img src="">
-                <h4>Assistance utilisateur 24/24</h4><br />
-                <p>Nous sommes là pour vous jour et nuit. Parlez à notre équipe d'assistance où que vous soyez et à
-                    toute
-                    heure.
-                </p>
-                <img src="">
-                <h4>Charte d'hospitalité générale</h4><br />
-                <p>Les voyageurs évaluent leurs hôtes après chaque voyage. Tous les hôtes doivent obtenir une
-                    évaluation
-                    minimale et
-                    se conformer à notre charte d'hospitalité pour rester sur Airbnb.</p>
-                <img src="<i class=" fa fa-user-o" aria-hidden="true"></i>">
-                <h4>Hôte 5 étoiles</h4><br />
-                <p>Entre les draps toujours frais et les meilleures recommandations du quartier, l'hospitalité est
-                    une
-                    seconde
-                    nature chez les hôtes Airbnb.</p>
+            <div class="blocs advantages">
+                <div class="assistance">
+                    <i class="fa fa-info-circle fa-4x" aria-hidden="true"></i>
+                    <h4>Assistance utilisateur 24/24</h4>
+                    <p>Nous sommes là pour vous jour et nuit. Parlez à notre équipe d'assistance où que vous soyez et à
+                        toute
+                        heure.
+                    </p>
+                </div>
+
+                <div class="charte">
+                    <i class="fa fa-book fa-4x" aria-hidden="true"></i>
+                    <h4>Charte d'hospitalité générale</h4>
+                    <p>Les voyageurs évaluent leurs hôtes après chaque voyage. Tous les hôtes doivent obtenir une
+                        évaluation
+                        minimale et
+                        se conformer à notre charte d'hospitalité pour rester sur Airbnb.</p>
+                </div>
+
+                <div class="hote">
+                    <i class="fa fa-users fa-4x" aria-hidden="true"></i>
+                    <h4>Hôte 5 étoiles</h4>
+                    <p>Entre les draps toujours frais et les meilleures recommandations du quartier, l'hospitalité est
+                        une seconde nature chez les hôtes Airbnb.</p>
+                </div>
             </div>
         </section>
 
@@ -234,9 +249,11 @@
 
         <!--disponibilités-->
         <section>
-            <h3>Quand voyagez-vous?</h3>
-            <p>Vérifiez la disponibilité et le prix des dates.</p>
-            <a href="#Arrivée"><input type="submit" value="Ajouter des dates" /></a>
+            <div class="dispo">
+                <h3>Quand voyagez-vous?</h3>
+                <p>Vérifiez la disponibilité et le prix des dates.</p>
+                <a href="#Arrivée"><input type="submit" value="Ajouter des dates" /></a>
+            </div>
         </section>
     </article>
 
@@ -286,7 +303,8 @@
 
     <aside>
         <div class="logosfoot">
-            <p><span class="iconify" data-icon="simple-icons:airbnb" data-inline="false"></span> logo C 2019 Airbnb,
+            <p><span class="iconify" data-icon="simple-icons:airbnb" data-inline="false"></span> <i
+                    class="fa fa-copyright" aria-hidden="true"></i> 2019 Airbnb,
                 Inc. All rights reserved.</p>
         </div>
     </aside>
